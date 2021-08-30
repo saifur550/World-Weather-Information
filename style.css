@@ -35,6 +35,10 @@ button{
     cursor: pointer;
 }
 
+.main-middle h3,h5{
+    color: #fff;
+}
+
 #preloader{
     background: #FFCC00 url(/img/loader4.gif);
     background-repeat: no-repeat;

@@ -19,6 +19,15 @@ const status = document.getElementById('status')
 
 //showinfo function
 function showInfo(info){
+    if(info.weather[0].main=='Haze'){
+        img.src ="./img/haze.png"
+    }else if (info.weather[0].main=='Clouds'){
+        img.src ="./img/cloudy-day.png"
+    }else if(info.weather[0].main=='Rain'){
+        img.src ="./img/raining.png"
+    }else{
+        img.src ="./img/weather.png"
+    }
     console.log(info);
     country.innerText = info.name;
     temp.innerText = info.weather[0].main;
